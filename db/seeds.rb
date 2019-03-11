@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+i=1
+
+while i<21 
+	
+    
+	Item.create( title: 'cat'+i.to_s  , description:'description'+i.to_s , price: i , image_url: "images/#{i}.jpg")
+	i=i+1
+end
