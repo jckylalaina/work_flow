@@ -11,6 +11,6 @@ i=1
 while i<21 
 	
     
-	Item.create( title: 'cat'+i.to_s  , description:'description'+i.to_s , price: i , image_url: "images/#{i}.jpg")
+	item = Item.create!( title: 'catia'+i.to_s  , description:'description of the cat where is overhere'+i.to_s , price: i , image_url: "images/#{i}.jpg")
 	i=i+1
 end
