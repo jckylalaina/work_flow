@@ -8,9 +8,7 @@
 
 i=1
 
-while i<21 
-	
-    
+while i < 21 
 	Item.create( title: 'cat'+i.to_s  , description:'description'+i.to_s , price: i , image_url: "images/#{i}.jpg")
 	i=i+1
 end
