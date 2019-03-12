@@ -8,9 +8,14 @@
 
 i=1
 
+<<<<<<< HEAD
 while i<21 
 	
     
 	item = Item.create!( title: 'catia'+i.to_s  , description:'description of the cat where is overhere'+i.to_s , price: i , image_url: "images/#{i}.jpg")
+=======
+while i < 21 
+	Item.create( title: 'cat'+i.to_s  , description:'description'+i.to_s , price: i , image_url: "images/#{i}.jpg")
+>>>>>>> master
 	i=i+1
 end
