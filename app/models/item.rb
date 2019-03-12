@@ -3,5 +3,6 @@ class Item < ApplicationRecord
 	validates :description ,presence:true, :length => {:in => 20..250}
     validates :price,presence:true
     has_many :carts
-    has_many :user ,through: :carts
+    has_many :users ,through: :carts
+    has_many :orders, through: :carts
 end

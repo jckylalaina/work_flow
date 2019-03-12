@@ -9,5 +9,8 @@
 i=1
 while i < 21 
 	Item.create!( title: 'cat number '+i.to_s  , description:'description of the cat number '+i.to_s , price: i , image_url: "images/#{i}.jpg")
+	User.create!( name: "User number "+ i.to_s, email: "email@mail"+i.to_s, password: "meandall")
+	Cart.create!( user_id: i, item_id: i)
+	Order.create!( user_id: i, cart_id: i)
 	i=i+1
 end

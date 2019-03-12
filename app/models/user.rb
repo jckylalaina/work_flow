@@ -6,4 +6,5 @@ class User < ApplicationRecord
   # validates :name,presence:true,:length =>{minimum:4}
   has_one :cart
   has_many :items, through: :cart
+  has_many :orders, through: :cart
 end
